@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Header from "../components/Header.jsx";
+import "../index.css"
 
 export default function Home() {
   return (
-    <div class="bg-gradient-to-r from-gray-200 to-gray-100 h-screen w-screen">
+    <div class="default-background-size default-background-color">
       <Header />
-      <div class="pr-4">
-        <p class="text-gray-950 font-bold p-8 pb-2">About Me</p>
-        <p class="text-gray-950 pl-12">
+      <div class="pr-4 top-nav-buffer">
+        <p class="text-gray-950 font-bold px-16 pb-1">About Me</p>
+        <p class="text-gray-950 px-24">
           Hello! I am a Computer Science student in my junior year at UCF. I
           have a GPA of 3.9, a passion for software and technology, and I am
           looking to gain professional experience and contribute to meaningful
