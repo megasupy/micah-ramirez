@@ -12,10 +12,3 @@ export default function Contact() {
     </div>
   );
 }
-
-const colors = {
-  dark: "#211C84",
-  mid: "#4D55CC",
-  bright: "#7A73D1",
-  back: "#B5A8D5",
-};

@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.header-text {
+    @apply text-3xl text-cyan-900 drop-shadow-md hover:text-teal-600 hover:scale-105 transition-all duration-200
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import MePic from "../assets/me-pic.png";
 import { Link } from "react-router-dom";
+import "./Header.css";
 
 export default function Header() {
   return (
@@ -14,18 +15,18 @@ export default function Header() {
       </div>
       <div class="pr-8 flex-row justify-between space-x-16">
         <Link to="/">
-          <span class="text-3xl text-cyan-900 drop-shadow-md">Home</span>
+          <span class="header-text">Home</span>
         </Link>
         <Link to="/contact">
-          <span class="text-3xl text-cyan-900 drop-shadow-md">Contact</span>
+          <span class="header-text">Contact</span>
         </Link>
         <a
           href="https://drive.google.com/file/d/13pCza1JXytY4O31E-PpYopt89LvTupPr/view?usp=sharing"
           target="_blank"
         >
-          <span class="text-3xl text-cyan-900 dr op-shadow-md">Resume</span>
+          <span class="header-text">Resume</span>
         </a>
-        </div>
+      </div>
     </div>
   );
 }
