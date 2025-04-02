@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 .top-nav-bg-color {
-  @apply bg-gradient-to-r from-blue-200 to-neutral-50
+  @apply bg-gradient-to-r from-blue-200 to-green-50
 }
 .top-nav-text {
-  @apply text-3xl text-neutral-700 drop-shadow-md 
+  @apply text-3xl text-neutral-600 drop-shadow-md 
     hover:text-neutral-950 hover:scale-x-110 transition-all duration-200;
 }
 .top-nav-buffer {
