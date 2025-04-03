@@ -9,9 +9,6 @@ export default function Header() {
         <Link to="/">
           <span class="top-nav-text">Home</span>
         </Link>
-        <Link to="/contact">
-          <span class="top-nav-text">Contact</span>
-        </Link>
         <a
           href="https://drive.google.com/file/d/13pCza1JXytY4O31E-PpYopt89LvTupPr/view?usp=sharing"
           target="_blank"
