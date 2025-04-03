@@ -32,7 +32,7 @@ export default function Home() {
               real impact.
             </p>
           </div>
-          <div class="flex flex-row gap-16 pt-8 pb-8">
+          <div class="flex flex-row justify-center gap-16 pt-8 pb-8">
             <a
               href="https://www.linkedin.com/in/micah-ramirez-588174310/"
               target="_blank"

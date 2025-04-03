@@ -28,7 +28,7 @@
   @apply flex flex-col items-center justify-center w-full;
 }
 @utility default-paragraph-div {
-  @apply flex flex-col w-3xl max-w-11/12 font-normal items-center text-center text-2xl;
+  @apply flex flex-col justify-center w-3xl max-w-12/12 font-normal text-center text-2xl;
 }
 @utility indent-paragraph-container {
   @apply bg-gradient-to-b from-neutral-300 to-neutral-200 rounded-2xl 
