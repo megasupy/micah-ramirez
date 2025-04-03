@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, }from "react";
 import Header from "../components/Header.jsx";
 import "../index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,6 +6,9 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-router-dom";
 
 export default function Home() {
+  useEffect(() => {
+    document.querySelector("#themeColor").setAttribute("content", "#E5E7EB")
+  });
   return (
     <div class="default-background-size default-background-color">
       <Header />

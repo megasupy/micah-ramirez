@@ -18,6 +18,9 @@
 @utility top-nav-buffer {
   @apply pt-32;
 }
+@utility safari-theme-color {
+  @apply bg-gray-200
+}
 @utility default-background-color {
   @apply bg-gradient-to-b from-gray-200 to-gray-100;
 }
@@ -32,7 +35,7 @@
 }
 @utility indent-paragraph-container {
   @apply bg-gradient-to-b from-neutral-300 to-neutral-200 rounded-2xl 
-  drop-shadow-md place-items-center p-8 mb-8 max-w-10/12;
+  drop-shadow-md place-items-center p-8 mb-8 max-w-11/12;
 }
 @utility rainbow-text-color {
   @apply text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-green-600 to-blue-800;
