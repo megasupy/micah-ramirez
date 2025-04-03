@@ -2,16 +2,16 @@
 
 @utility top-nav-container {
   @apply fixed z-100 top-0 mt-2 left-1/2 transform -translate-x-1/2 flex 
-  h-12 max-w-120 flex-row items-center justify-center top-nav-bg-color shadow-lg rounded-full;
+  h-12 max-w-9/12 flex-row items-center justify-center top-nav-bg-color shadow-lg rounded-full;
 }
 @utility top-nav-text-container {
-  @apply flex-row justify-between space-x-15 px-15
+  @apply flex-row justify-between px-8 shrink;
 }
 @utility top-nav-bg-color {
   @apply bg-gradient-to-br from-neutral-100 to-neutral-200 border-2 border-neutral-300;
 }
 @utility top-nav-text {
-  @apply text-2xl drop-shadow-md 
+  @apply text-2xl drop-shadow-md p-4 shrink
   text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-slate-700
   hover:text-slate-800 hover:drop-shadow-lg transition-all duration-250;
 }
