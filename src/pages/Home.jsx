@@ -62,18 +62,6 @@ export default function Home() {
             </a>
           </div>
         </IndentContainer>
-        <IndentContainer className="indent-paragraph-container">
-          <div className="default-paragraph-div pt-8">
-            <p className="default-text-color font-bold pb-4">My Projects</p>
-            <p className="default-text-color">
-              1. Pantry Management App
-              <br />
-              2. Scalebot's Ascent
-              <br />
-              3. Something else.
-            </p>
-          </div>
-        </IndentContainer>
       </div>
     </Background>
   );9
