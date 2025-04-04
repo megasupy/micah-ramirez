@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div class="top-nav-container">
       <div class="top-nav-text-container">
-        <Link to="/micah-ramirez">
+        <Link to="/">
           <span class="top-nav-text">Home</span>
         </Link>
         <a
