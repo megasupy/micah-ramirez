@@ -48,7 +48,7 @@ export default function Contact() {
         <p className="pl-8">{phoneNumber}</p>
         <ClipboardClickable copyCheckValue={phoneNumber} />
       </div>
-      <div className="flex flex-row pb-12 default-text-normal">
+      <div className="flex flex-row pb-4 default-text-normal">
         <FontAwesomeIcon icon={faEnvelope} className=" default-icons-color self-center" />
         <p className="pl-8">{email}</p>
         <ClipboardClickable copyCheckValue={email} />
