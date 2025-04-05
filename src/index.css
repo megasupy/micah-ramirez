@@ -30,8 +30,11 @@
 @utility default-content-container {
   @apply flex flex-col items-center justify-center;
 }
+@utility default-text-normal {
+  @apply text-2xl
+}
 @utility default-paragraph-div {
-  @apply flex flex-col justify-center w-3xl max-w-12/12 font-normal text-center text-2xl;
+  @apply flex flex-col justify-center w-3xl max-w-12/12 font-normal text-center default-text-normal;
 }
 @utility indent-paragraph-container {
   @apply bg-gradient-to-b from-neutral-300 to-neutral-200 rounded-2xl 

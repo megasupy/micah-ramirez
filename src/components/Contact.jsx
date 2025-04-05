@@ -12,7 +12,7 @@ export default function Contact() {
     const [showCopyText, setShowCopyText] = useState(false);
     const timeoutRef = useRef(null);
     return (
-      <>
+      <div>
         <button
           title="Copy to clipboard"
           onClick={() => {
@@ -31,24 +31,24 @@ export default function Contact() {
         >
           <FontAwesomeIcon
             icon={faCopy}
-            className="size-9 default-icons-color pl-2 default-icon-clickable"
+            className="default-icons-color pl-4 default-icon-clickable"
           />
         </button>
-        {showCopyText ? <p className="default-text-small self-center pl-2">Copied to clipboard!</p> : null}
-      </>
+        {showCopyText ? <span className="default-text-small pl-2">Copied!</span> : null}
+      </div>
     );
   }
 
   return (
     <div className="default-paragraph-div">
       <p className="section-header-text">Contact</p>
-      <div className="flex flex-row pb-8">
-        <FontAwesomeIcon icon={faPhone} class="size-8 default-icons-color" />
+      <div className="flex flex-row pb-8 default-text-normal">
+        <FontAwesomeIcon icon={faPhone} className=" default-icons-color self-center" />
         <p className="pl-8">{phoneNumber}</p>
         <ClipboardClickable copyCheckValue={phoneNumber} />
       </div>
-      <div className="flex flex-row">
-        <FontAwesomeIcon icon={faEnvelope} class="size-8 default-icons-color" />
+      <div className="flex flex-row default-text-normal">
+        <FontAwesomeIcon icon={faEnvelope} className=" default-icons-color self-center" />
         <p className="pl-8">{email}</p>
         <ClipboardClickable copyCheckValue={email} />
       </div>
