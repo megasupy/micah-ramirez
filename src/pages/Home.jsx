@@ -3,6 +3,7 @@ import Header from "../components/Header.jsx";
 import "../index.css";
 import AboutMe from "../components/AboutMe.jsx"
 import Projects from "../components/Projects.jsx"
+import Contact from "../components/Contact.jsx"
 
 export default function Home() {
   useEffect(() => {
@@ -25,6 +26,7 @@ export default function Home() {
         <IndentContainer className="indent-paragraph-container">
           <AboutMe/>
           <hr className="default-line-break"/>
+          <Contact/>
           {/*<Projects/>*/}
         </IndentContainer>
       </div>
