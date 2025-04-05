@@ -55,8 +55,14 @@
 @utility default-text-big {
   @apply text-5xl leading-tight;
 }
+@utility default-text-small {
+  @apply text-sm;
+}
 @utility default-icons-color {   
   @apply text-gray-800;
+}
+@utility default-icon-clickable {
+  @apply hover:text-gray-950 hover:drop-shadow-md transition-all duration-250 cursor-pointer
 }
 @utility default-line-break {
   @apply mt-4 py-6 w-full;

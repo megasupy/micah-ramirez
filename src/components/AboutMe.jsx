@@ -31,19 +31,20 @@ export default function AboutMe() {
       </div>
       <div className="flex flex-row justify-center gap-16 pt-10 pb-8">
         <a
+          title="My Linkedin"
           href="https://www.linkedin.com/in/micah-ramirez-588174310/"
           target="_blank"
         >
           {/**class instead of className because className doesn't work with the sizing for some reason */}
           <FontAwesomeIcon
             icon={faLinkedin}
-            class="size-16 default-icons-color"
+            class="size-16 default-icons-color default-icon-clickable"
           />
         </a>
-        <a href="https://github.com/megasupy" target="_blank">
+        <a title="My GitHub" href="https://github.com/megasupy" target="_blank">
           <FontAwesomeIcon
             icon={faGithub}
-            class="size-16 default-icons-color"
+            class="size-16 default-icons-color default-icon-clickable"
           />
         </a>
       </div>

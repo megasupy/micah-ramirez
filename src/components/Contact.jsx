@@ -1,29 +1,57 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Header from "./Header.jsx";
 import "../index.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faEnvelope, faCopy } from "@fortawesome/free-solid-svg-icons";
 
 export default function Contact() {
+  const phoneNumber = "407-721-0851";
+  const email = "mi770395@ucf.edu";
+
+  function ClipboardClickable({ copyCheckValue, timeDuration=1500}) {
+    const [showCopyText, setShowCopyText] = useState(false);
+    const timeoutRef = useRef(null);
+    return (
+      <>
+        <button
+          title="Copy to clipboard"
+          onClick={() => {
+            // Copy to clipboard and show text
+            navigator.clipboard.writeText(copyCheckValue);
+            setShowCopyText(true);
+
+            // Wipe the previous timer and start a new one to shut off the text
+            if (timeoutRef.current) {
+              clearTimeout(timeoutRef.current);
+            }
+            timeoutRef.current = setTimeout(() => {
+              setShowCopyText(false);
+            }, timeDuration)
+          }}
+        >
+          <FontAwesomeIcon
+            icon={faCopy}
+            className="size-9 default-icons-color pl-2 default-icon-clickable"
+          />
+        </button>
+        {showCopyText ? <p className="default-text-small self-center pl-2">Copied to clipboard!</p> : null}
+      </>
+    );
+  }
+
   return (
     <div className="default-paragraph-div">
       <p className="section-header-text">Contact</p>
-      <p className="default-text-color">
-        <div className="flex flex-row pb-8">
-          <FontAwesomeIcon
-            icon={faPhone}
-            class="size-8 default-icons-color"
-          />
-          <p className="pl-8 p">407-721-0851</p>
-        </div>
-        <div className="flex flex-row ">
-          <FontAwesomeIcon
-            icon={faEnvelope}
-            class="size-8 default-icons-color"
-          />
-          <p className="pl-8 pb-8">mi770395@ucf.edu</p>
-        </div>
-      </p>
+      <div className="flex flex-row pb-8">
+        <FontAwesomeIcon icon={faPhone} class="size-8 default-icons-color" />
+        <p className="pl-8">{phoneNumber}</p>
+        <ClipboardClickable copyCheckValue={phoneNumber} />
+      </div>
+      <div className="flex flex-row">
+        <FontAwesomeIcon icon={faEnvelope} class="size-8 default-icons-color" />
+        <p className="pl-8">{email}</p>
+        <ClipboardClickable copyCheckValue={email} />
+      </div>
     </div>
   );
 }
