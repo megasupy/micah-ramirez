@@ -13,6 +13,7 @@ export default function Contact() {
     const timeoutRef = useRef(null);
     return (
       <div>
+        {showCopyText ? <p className="default-text-small pl-2 inline">Copied!</p> : (
         <button
           title="Copy to clipboard"
           onClick={() => {
@@ -34,7 +35,7 @@ export default function Contact() {
             className="default-icons-color pl-4 default-icon-clickable"
           />
         </button>
-        {showCopyText ? <span className="default-text-small pl-2">Copied!</span> : null}
+        )}
       </div>
     );
   }
@@ -47,7 +48,7 @@ export default function Contact() {
         <p className="pl-8">{phoneNumber}</p>
         <ClipboardClickable copyCheckValue={phoneNumber} />
       </div>
-      <div className="flex flex-row default-text-normal">
+      <div className="flex flex-row pb-12 default-text-normal">
         <FontAwesomeIcon icon={faEnvelope} className=" default-icons-color self-center" />
         <p className="pl-8">{email}</p>
         <ClipboardClickable copyCheckValue={email} />
