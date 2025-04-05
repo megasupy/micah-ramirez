@@ -16,8 +16,9 @@ export default function AboutMe() {
           </span>
         </p>
       </div>
-      <div className="default-paragraph-div pt-2">
-        <p className="default-text-color font-bold pb-4">About Me</p>
+      <hr className="default-line-break" />
+      <div className="default-paragraph-div">
+        <p className="section-header-text">About Me</p>
         <p className="default-text-color">
           I am a junior computer science student with a 3.9 GPA and a passion
           for developing efficient software. My coursework at UCF has given me a
@@ -28,7 +29,7 @@ export default function AboutMe() {
           apply my skills to make a real impact.
         </p>
       </div>
-      <div className="flex flex-row justify-center gap-16 pt-8 pb-8">
+      <div className="flex flex-row justify-center gap-16 pt-10 pb-8">
         <a
           href="https://www.linkedin.com/in/micah-ramirez-588174310/"
           target="_blank"

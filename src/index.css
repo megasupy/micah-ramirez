@@ -16,7 +16,7 @@
   hover:text-slate-800 hover:drop-shadow-lg transition-all duration-250;
 }
 @utility top-nav-buffer {
-  @apply pt-32;
+  @apply pt-24
 }
 @utility safari-theme-color {
   @apply bg-gray-200
@@ -46,9 +46,19 @@
 @utility default-text-emphasis {
   @apply text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-slate-600;
 }
-@utility default-text-big {
-  @apply text-4xl leading-tight;
+@utility section-header-text {
+  @apply default-icons-color text-3xl font-bold pb-6;
 }
-@utility default-icons-color {
+@utility section-header-text-small {
+  @apply font-bold py-4 text-2xl;
+}
+@utility default-text-big {
+  @apply text-5xl leading-tight;
+}
+@utility default-icons-color {   
   @apply text-gray-800;
 }
+@utility default-line-break {
+  @apply mt-4 py-6 w-full;
+}
+

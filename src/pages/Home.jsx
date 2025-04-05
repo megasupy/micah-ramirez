@@ -17,12 +17,15 @@ export default function Home() {
   const IndentContainer = ({ children, className }) => (
     <div className={className}>{children}</div>
   );
+
   return (
     <Background>
-      <Header />
+      <Header/>
       <div className="default-content-container top-nav-buffer">
         <IndentContainer className="indent-paragraph-container">
           <AboutMe/>
+          <hr className="default-line-break"/>
+          {/*<Projects/>*/}
         </IndentContainer>
       </div>
     </Background>
