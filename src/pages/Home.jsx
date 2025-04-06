@@ -29,8 +29,7 @@ export default function Home() {
       <div className="default-content-container top-nav-buffer">
         <IndentContainer className="indent-paragraph-container">
           <AboutMe />
-          <hr className="default-line-break" />
-          <Contact />
+          
           {/*<Projects/>*/}
         </IndentContainer>
         <Copyright />
