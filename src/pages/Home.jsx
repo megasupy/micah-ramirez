@@ -24,7 +24,7 @@ export default function Home() {
   );
 
   return (
-    <Background>9
+    <Background>
       <Header />
       <div className="default-content-container top-nav-buffer">
         <IndentContainer className="indent-paragraph-container">
