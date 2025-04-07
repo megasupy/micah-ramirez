@@ -11,7 +11,7 @@ export default function Home() {
   });
 
   const Background = ({ children }) => (
-    <div className="default-background-color">{children}</div>
+    <div className="default-background-color default-background-size">{children}</div>
   );
   const IndentContainer = ({ children, className }) => (
     <div className={className}>{children}</div>
@@ -31,7 +31,7 @@ export default function Home() {
           <AboutMe />
           
           {/*<Projects/>*/}
-        </IndentContainer>
+          </IndentContainer>
         <Copyright />
       </div>
     </Background>

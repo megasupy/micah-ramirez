@@ -20,7 +20,7 @@ export default function AboutMe() {
       <div className="default-paragraph-div">
         <p className="section-header-text">About Me</p>
         <p className="default-text-color">
-          I am a junior computer science student with a 3.9 GPA and a passion
+          I am a junior computer science student at University of Central Florida with a 3.9 GPA and a passion
           for developing efficient software. My coursework at UCF has given me a
           strong understanding of data structures and algorithms, and from my
           side projects I have acquired a solid foundation in full-stack
@@ -38,13 +38,13 @@ export default function AboutMe() {
           {/**class instead of className because className doesn't work with the sizing for some reason */}
           <FontAwesomeIcon
             icon={faLinkedin}
-            class="size-16 default-icons-color default-icon-clickable"
+            className="default-icon-large default-icons-color default-icon-clickable"
           />
         </a>
         <a title="My GitHub" href="https://github.com/megasupy" target="_blank">
           <FontAwesomeIcon
             icon={faGithub}
-            class="size-16 default-icons-color default-icon-clickable"
+            className="default-icon-large default-icons-color default-icon-clickable"
           />
         </a>
       </div>
