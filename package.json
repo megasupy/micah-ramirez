@@ -18,6 +18,8 @@
     "@fortawesome/free-regular-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@hcaptcha/react-hcaptcha": "^1.12.0",
+    "@supabase/supabase-js": "^2.49.4",
     "@tailwindcss/vite": "^4.0.17",
     "gh-pages": "^6.3.0",
     "pg": "^8.14.1",
