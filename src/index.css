@@ -83,3 +83,6 @@
   @apply bg-neutral-100 rounded-3xl border-slate-300 border-1 drop-shadow-sm px-2 py-1 default-text-normal default-icons-color 
   hover:text-gray-950 hover:bg-neutral-200 hover:drop-shadow-md transition-all duration-250 cursor-pointer;
 }
+@utility default-button-inactive {
+  @apply bg-neutral-100 rounded-3xl border-slate-300 border-1 drop-shadow-sm px-2 py-1 default-text-normal default-icons-color ;
+}
