@@ -1,109 +1,109 @@
 @import "tailwindcss";
 /* Colors */
 @utility top-nav-bg-color {
-  @apply bg-gradient-to-br from-neutral-100 to-neutral-200 border-2 border-neutral-300;
+    @apply bg-gradient-to-br from-neutral-100 to-neutral-200 border-2 border-neutral-300;
 }
 @utility top-nav-text-color {
-  @apply text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-slate-700 hover:text-slate-800;
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-slate-700 hover:text-slate-800;
 }
 @utility safari-theme-color {
-  @apply bg-gray-200;
+    @apply bg-gray-200;
 }
 @utility default-background-color {
-  @apply bg-gradient-to-b from-gray-200 to-gray-100;
+    @apply bg-gradient-to-b from-gray-200 to-gray-100;
 }
 @utility indent-paragraph-color {
-  @apply bg-gradient-to-b from-neutral-300 to-neutral-200
+    @apply bg-gradient-to-b from-neutral-300 to-neutral-200
 }
 @utility rainbow-text-color {
-  @apply text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-green-600 to-blue-800;
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-green-600 to-blue-800;
 }
 @utility default-text-color {
-  @apply text-transparent bg-clip-text bg-gradient-to-r from-slate-950 to-slate-900;
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-slate-950 to-slate-900;
 }
 @utility default-text-emphasis {
-  @apply text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-slate-600;
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-slate-600 to-slate-600;
 }
 @utility default-icons-color {
-  @apply text-gray-800;
+    @apply text-gray-800;
 }
 @utility default-icons-clickable-color {
-  @apply hover:text-gray-900
+    @apply hover:text-gray-900
 }
 @utility default-interactible-bg-color {
-  @apply bg-slate-100 border-slate-300
+    @apply bg-slate-100 border-slate-300
 }
 @utility default-button-hovered-color {
-  @apply hover:text-gray-950 hover:bg-neutral-200
+    @apply hover:text-gray-950 hover:bg-neutral-200
 }
 @utility default-interactible-inactive-bg-color {
-  @apply bg-neutral-100 border-slate-300
+    @apply bg-neutral-100 border-slate-300
 }
 
 @utility top-nav-container {
-  @apply fixed z-100 top-0 mt-4 left-1/2 transform -translate-x-1/2 flex 
-  h-12 max-w-10/12 flex-row items-center justify-center top-nav-bg-color shadow-lg rounded-full;
+    @apply fixed z-100 top-0 mt-4 left-1/2 transform -translate-x-1/2 flex
+    h-12 max-w-10/12 flex-row items-center justify-center top-nav-bg-color shadow-lg rounded-full;
 }
 @utility top-nav-text-container {
-  @apply flex-row justify-between px-8 shrink;
+    @apply flex-row justify-between px-8 shrink;
 }
 @utility top-nav-text {
-  @apply text-2xl drop-shadow-md p-4 shrink top-nav-text-color hover:drop-shadow-lg transition-all duration-250;
+    @apply text-2xl drop-shadow-md p-4 shrink top-nav-text-color hover:drop-shadow-lg transition-all duration-250;
 }
 @utility top-nav-buffer {
-  @apply pt-24;
+    @apply pt-24;
 }
 
 
 @utility default-background-size {
-  @apply min-h-screen h-full;
+    @apply min-h-screen h-full;
 }
 @utility default-content-container {
-  @apply flex flex-col items-center justify-center;
+    @apply flex flex-col items-center justify-center;
 }
 @utility default-text-normal {
-  @apply text-xl;
+    @apply text-xl;
 }
 @utility default-paragraph-div {
-  @apply flex flex-col justify-center w-3xl max-w-12/12 font-normal text-center default-text-normal;
+    @apply flex flex-col justify-center w-3xl max-w-12/12 font-normal text-center default-text-normal;
 }
 @utility indent-paragraph-container {
-  @apply indent-paragraph-color rounded-2xl 
-  drop-shadow-md place-items-center p-8 mb-12 max-w-11/12;
+    @apply indent-paragraph-color rounded-2xl
+    drop-shadow-md place-items-center p-8 mb-12 max-w-11/12;
 }
 
 @utility section-header-text {
-  @apply default-icons-color text-2xl font-bold pb-6;
+    @apply default-icons-color text-2xl font-bold pb-6;
 }
 @utility section-header-text-small {
-  @apply font-bold py-4 text-xl;
+    @apply font-bold py-4 text-xl;
 }
 @utility default-text-big {
-  @apply text-4xl leading-tight;
+    @apply text-4xl leading-tight;
 }
 @utility default-text-small {
-  @apply text-sm;
+    @apply text-sm;
 }
 
 @utility default-icon-clickable {
-  @apply hover:default-icons-clickable-color hover:drop-shadow-md transition-all duration-250 cursor-pointer;
+    @apply hover:default-icons-clickable-color hover:drop-shadow-md transition-all duration-250 cursor-pointer;
 }
 @utility default-line-break {
-  @apply mt-4 py-6 w-full default-icons-color;
+    @apply mt-4 py-6 w-full default-icons-color;
 }
 @utility default-icon-small-medium {
-  @apply text-3xl;
+    @apply text-3xl;
 }
 @utility default-icon-large {
-  @apply text-6xl;
+    @apply text-6xl;
 }
 @utility default-textbox {
-  @apply default-interactible-bg-color rounded-3xl border-1 drop-shadow-md px-6 py-1 default-text-normal;
+    @apply default-interactible-bg-color rounded-3xl border-1 drop-shadow-md px-6 py-1 default-text-normal;
 }
 @utility default-button {
-  @apply default-interactible-bg-color rounded-3xl border-1 drop-shadow-sm px-2 py-1 default-text-normal default-icons-color 
-  default-button-hovered-color hover:drop-shadow-md transition-all duration-250 cursor-pointer;
+    @apply default-interactible-bg-color rounded-3xl border-1 drop-shadow-sm px-2 py-1 default-text-normal default-icons-color
+    default-button-hovered-color hover:drop-shadow-md transition-all duration-250 cursor-pointer;
 }
 @utility default-button-inactive {
-  @apply default-interactible-inactive-bg-color rounded-3xl border-1 drop-shadow-sm px-2 py-1 default-text-normal default-icons-color;
+    @apply default-interactible-inactive-bg-color rounded-3xl border-1 drop-shadow-sm px-2 py-1 default-text-normal default-icons-color;
 }

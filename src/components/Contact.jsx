@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, {useRef, useState} from "react";
 import "../index.css";
 import supabase from "../scripts/supabase.js";
 
@@ -16,12 +16,12 @@ export default function Contact() {
   const [honeypot, setHoneypot] = useState("");
 
   function ClipboardClickable({
-    copyCheckValue,
-    timeDuration = 1500,
-    title = "Copy to clipboard",
-    copyText = "Copied!",
-    className,
-  }) {
+                                copyCheckValue,
+                                timeDuration = 1500,
+                                title = "Copy to clipboard",
+                                copyText = "Copied!",
+                                className,
+                              }) {
     const [showCopyText, setShowCopyText] = useState(false);
     const timeoutRef = useRef(null);
     return (
@@ -68,7 +68,7 @@ export default function Contact() {
       error = "Error: Invalid email address!";
     } else if (userMessage == "") {
       error = "Error: Message is Empty!";
-    //} else if (!captchaToken) {
+      //} else if (!captchaToken) {
       //error = "Error: Must complete Captcha!"
     } else if (honeypot !== "") {
       error = "Error: You are likely a bot. Please reload the page, enter your information manually, or send me an email."
@@ -80,9 +80,9 @@ export default function Contact() {
       return;
     }
 
-    const { data, error: supaError } = await supabase
+    const {data, error: supaError} = await supabase
       .from("messages_sent_to_me")
-      .insert([{ message: userMessage, name: userName, email: userEmail }]);
+      .insert([{message: userMessage, name: userName, email: userEmail}]);
     if (supaError) {
       setMessageResult(
         "Message could not be sent. Please try again or message me some other way."
@@ -108,8 +108,8 @@ export default function Contact() {
         <p className="section-header-text">Contact Me</p>
         <p className="default-text-normal">
           Please contact me directly at{" "}
-          <span className="default-text-emphasis">{MY_EMAIL}</span> or through
-          this form.
+          <span className="default-text-emphasis">{MY_EMAIL}</span>, send me a message on LinkedIn, or send me
+          a message through this form.
         </p>
         <ClipboardClickable
           className="p-2"
@@ -118,16 +118,6 @@ export default function Contact() {
           timeDuration={3000}
           copyText="Email copied!"
         />
-        {/*
-        <div className="flex flex-row pt-4 pb-8">
-          <FontAwesomeIcon
-            icon={faPhone}
-            className=" default-icon-small-medium default-icons-color self-center"
-          />
-          <p className="pl-8">{phoneNumber}</p>
-          <ClipboardClickable copyCheckValue={phoneNusmber} />
-        </div>
-        */}
         {/**This is the form. */}
         <div className="py-4">
           <div className="default-paragraph-div items-center flex-col">
@@ -164,7 +154,7 @@ export default function Contact() {
               }}
             />
           </div>
-          {/*<HCaptcha sitekey={CAPTCHA_SITE_KEY} onVerify={(token) => setCaptchaToken(token)*/} 
+          {/*<HCaptcha sitekey={CAPTCHA_SITE_KEY} onVerify={(token) => setCaptchaToken(token)*/}
           <button className="default-button px-4" onClick={handleSubmit}>
             Send Form
           </button>

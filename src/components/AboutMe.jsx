@@ -1,7 +1,7 @@
 import React from "react";
 import "../index.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 // Needs to be wrapped in a container div of some sort.
 export default function AboutMe() {
@@ -10,13 +10,13 @@ export default function AboutMe() {
       <div className="default-paragraph-div py-10">
         <p className="default-text-color default-text-big font-bold">
           Hello! My name is
-          <br />
+          <br/>
           <span className="default-text-emphasis default-text-big font-bold">
             Micah Ramirez
           </span>
         </p>
       </div>
-      <hr className="default-line-break" />
+      <hr className="default-line-break"/>
       <div className="default-paragraph-div">
         <p className="section-header-text">About Me</p>
         <p className="default-text-color">
