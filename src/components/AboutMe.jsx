@@ -1,7 +1,6 @@
 import React from "react";
 import "../index.css";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import Icons from "./Icons.jsx";
 
 // Needs to be wrapped in a container div of some sort.
 export default function AboutMe() {
@@ -29,25 +28,7 @@ export default function AboutMe() {
           apply my skills to make a real impact.
         </p>
       </div>
-      <div className="flex flex-row justify-center gap-16 pt-10 pb-8">
-        <a
-          title="My Linkedin"
-          href="https://www.linkedin.com/in/micah-ramirez-588174310/"
-          target="_blank"
-        >
-          {/**class instead of className because className doesn't work with the sizing for some reason */}
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className="default-icon-large default-icons-color default-icon-clickable"
-          />
-        </a>
-        <a title="My GitHub" href="https://github.com/megasupy" target="_blank">
-          <FontAwesomeIcon
-            icon={faGithub}
-            className="default-icon-large default-icons-color default-icon-clickable"
-          />
-        </a>
-      </div>
+      <Icons/>
     </>
   );
 }
