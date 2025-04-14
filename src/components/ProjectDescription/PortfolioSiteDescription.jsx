@@ -17,11 +17,18 @@ export default function PortfolioSiteDescription(props) {
       <li>Designed and developed this personal portfolio website using React.js and Tailwind CSS.</li>
       <li>Implemented smooth scrolling navigation and interactive UI components for improved user experience.</li>
       <li>Integrated with Supabase backend for contact form submissions.</li>
+      <li>Deployed to a custom domain using Github Pages</li>
     </ul>
     <div className="mt-6 default-button self-center items-center">
       <FontAwesomeIcon icon={faGithub} className="default-icons-color mr-3"/>
-      <a href="https://github.com/megasupy/micah-ramirez" target="_blank">
+      <a title="https://github.com/megasupy/micah-ramirez" href="https://github.com/megasupy/micah-ramirez" target="_blank">
         View Github Repository
+      </a>
+    </div>
+    <div className="mt-2 default-button self-center items-center">
+      <FontAwesomeIcon icon={faGlobe} className="default-icons-color mr-3"/>
+      <a title="https://www.micahramirez.tech" href="https://www.micahramirez.tech" target="_blank">
+        View Site
       </a>
     </div>
   </div>;

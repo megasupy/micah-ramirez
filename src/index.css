@@ -113,7 +113,7 @@
     default-button-hovered-color hover:drop-shadow-md transition-all duration-250 cursor-pointer;
 }
 @utility default-button-inactive {
-    @apply default-interactible-inactive-bg-color rounded-3xl border-1 drop-shadow-sm px-2 py-1 default-text-normal default-icons-color;
+    @apply default-interactible-inactive-bg-color rounded-lg border-1 shadow px-2 py-1 default-text-normal default-icons-color;
 }
 @utility projects-buttons {
     @apply px-5 py-2 cursor-pointer default-interactible-bg-color default-button-hovered-color rounded-lg transition shadow-md flex items-center;

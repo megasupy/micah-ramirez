@@ -22,7 +22,7 @@ export default function PantryAppDescription(props) {
     </ul>
     <div className="mt-6 default-button self-center items-center">
       <FontAwesomeIcon icon={faGithub} className="default-icons-color mr-3"/>
-      <a href="https://github.com/megasupy/micah-ramirez" target="_blank">
+      <a title="https://github.com/ben-andrew/PantryPal" href="https://github.com/ben-andrew/PantryPal" target="_blank">
         View Github Repository
       </a>
     </div>
