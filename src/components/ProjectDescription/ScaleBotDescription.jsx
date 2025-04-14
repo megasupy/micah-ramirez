@@ -19,7 +19,7 @@ export default function ScaleBotDescription(props) {
     </ul>
     <div className="mt-6 default-button self-center">
       <FontAwesomeIcon icon={faGamepad} className="default-icons-color mr-3"/>
-      <a title="Play Scalebot's Ascent on Itch.io" href="https://itch.io/embed-upload/11261341?color=333333" target="_blank">
+      <a title="Play Scalebot's Ascent on Itch.io" href="https://megasupy.itch.io/scalebotsascent" target="_blank">
         Play ScaleBot's Ascent
       </a>
     </div>
