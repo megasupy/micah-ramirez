@@ -5,9 +5,7 @@ import "../index.css";
 import AboutMe from "../components/AboutMe.jsx";
 import Contact from "../components/Contact.jsx";
 import Projects from "../components/Projects.jsx";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
-import BashCloneDescription from "../components/ProjectDescription/BashCloneDescription.jsx";
+import Education from "../components/Education.jsx";
 
 
 export default function Home() {
