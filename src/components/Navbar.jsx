@@ -4,7 +4,7 @@ import "../index.css"; // For repeated styles like header-text
 
 
 
-export default function Header( {scrollFunction} ) {
+export default function Navbar({scrollFunction} ) {
 
   return (
     <div className="top-nav-container">
