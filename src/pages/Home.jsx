@@ -1,6 +1,6 @@
 import React, {useEffect, useRef} from "react";
 import {Profiler} from "react";
-import Header from "../components/Header.jsx";
+import Navbar from "../components/Navbar.jsx";
 import "../index.css";
 import AboutMe from "../components/AboutMe.jsx";
 import Contact from "../components/Contact.jsx";
@@ -58,12 +58,14 @@ export default function Home() {
   return (
     <Profiler id={"App"} onRender={onRender}>
       <Background>
-        <Header scrollFunction={handleScroll}/>
+        <Navbar scrollFunction={handleScroll}/>
         <div ref={homeRef}/>
         <div className="default-content-container top-nav-buffer">
           <IndentContainer className="indent-paragraph-container">
             <AboutMe/>
             <div ref={projectsRef}/>
+            <hr className="default-line-break"/>
+            <Education/>
             <hr className="default-line-break"/>
             <Projects/>
             <hr className="default-line-break" ref={contactRef}/>

@@ -1,10 +1,10 @@
 import React, {Profiler, useRef} from "react";
 import "../index.css";
-import PortfolioSiteDescription from "./ProjectDescription/PortfolioSiteDescription.jsx";
-import PantryAppDescription from "./ProjectDescription/PantryAppDescription.jsx";
-import ProjectButtons from "./ProjectButtons.jsx";
-import BashCloneDescription from "./ProjectDescription/BashCloneDescription.jsx";
-import ScaleBotDescription from "./ProjectDescription/ScaleBotDescription.jsx";
+import PortfolioSiteDescription from "./ProjectComponents/PortfolioSiteDescription.jsx";
+import PantryAppDescription from "./ProjectComponents/PantryAppDescription.jsx";
+import ProjectButtons from "./ProjectComponents/ProjectButtons.jsx";
+import BashCloneDescription from "./ProjectComponents/BashCloneDescription.jsx";
+import ScaleBotDescription from "./ProjectComponents/ScaleBotDescription.jsx";
 
 export default function Projects() {
   // Create refs for each section you want to scroll to
