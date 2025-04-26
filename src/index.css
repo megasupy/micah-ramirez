@@ -52,7 +52,7 @@
     @apply flex flex-row justify-between px-8;
 }
 @utility top-nav-text {
-    @apply text-xl md:text-2xl drop-shadow-md px-2 md:px-4 lg:px-8 top-nav-text-color cursor-pointer
+    @apply text-sm sm:text-base md:text-xl lg:text-2xl drop-shadow-md px-2 md:px-4 lg:px-8 top-nav-text-color cursor-pointer
     hover:drop-shadow-lg transition-all duration-250;
 }
 @utility top-nav-buffer {
