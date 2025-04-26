@@ -12,6 +12,7 @@ export default function Home() {
   const homeRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
+  const eduRef = useRef(null);
 
   useEffect(() => {
     document.querySelector("#themeColor").setAttribute("content", "#E5E7EB");
@@ -28,6 +29,9 @@ export default function Home() {
         break;
       case "Contact":
         ref = contactRef;
+        break;
+      case "Education":
+        ref = eduRef;
         break;
       default: return;
     }
@@ -63,9 +67,10 @@ export default function Home() {
         <div className="default-content-container top-nav-buffer">
           <IndentContainer className="indent-paragraph-container">
             <AboutMe/>
-            <div ref={projectsRef}/>
             <hr className="default-line-break"/>
+            <div ref={eduRef}/>
             <Education/>
+            <div ref={projectsRef}/>
             <hr className="default-line-break"/>
             <Projects/>
             <hr className="default-line-break" ref={contactRef}/>

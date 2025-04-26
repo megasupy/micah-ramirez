@@ -52,7 +52,7 @@
     @apply flex flex-row justify-between px-8;
 }
 @utility top-nav-text {
-    @apply text-2xl drop-shadow-md px-2 md:px-4 lg:px-8  top-nav-text-color cursor-pointer
+    @apply text-xl md:text-2xl drop-shadow-md px-2 md:px-4 lg:px-8 top-nav-text-color cursor-pointer
     hover:drop-shadow-lg transition-all duration-250;
 }
 @utility top-nav-buffer {
@@ -75,14 +75,17 @@
     drop-shadow-md place-items-center p-8 mb-12 max-w-11/12;
 }
 @utility indent-paragraph-container-2 {
-    @apply indent-paragraph-color-2 rounded-lg self-center
-    drop-shadow-md place-items-center p-8 mb-12 max-w-12/12;
+    @apply indent-paragraph-color-2 self-center
+    drop-shadow-md place-items-center p-8 mb-12 w-12/12;
 }
 @utility section-header-text {
     @apply default-icons-color text-2xl font-bold pb-6;
 }
 @utility section-header-text-small {
     @apply font-bold py-4 text-xl;
+}
+@utility section-header-subtext-small {
+    @apply pb-4 text-xl italic;
 }
 @utility default-text-big {
     @apply text-4xl leading-tight;
@@ -106,15 +109,15 @@
     @apply text-6xl;
 }
 @utility default-textbox {
-    @apply default-interactible-bg-color rounded-lg border-1 drop-shadow-md px-6 py-1 default-text-normal;
+    @apply default-interactible-bg-color border-1 drop-shadow-md px-6 py-1 default-text-normal;
 }
 @utility default-button {
-    @apply default-interactible-bg-color rounded-lg shadow border-1 px-2 py-1 default-text-normal default-icons-color
-    default-button-hovered-color hover:drop-shadow-md transition-all duration-250 cursor-pointer;
+    @apply default-interactible-bg-color shadow border-1 px-2 py-1 default-text-normal default-icons-color
+    default-button-hovered-color transition duration-250 cursor-pointer;
 }
 @utility default-button-inactive {
-    @apply default-interactible-inactive-bg-color rounded-lg border-1 shadow px-2 py-1 default-text-normal default-icons-color;
+    @apply default-interactible-inactive-bg-color border-1 shadow px-2 py-1 default-text-normal default-icons-color;
 }
 @utility projects-buttons {
-    @apply px-5 py-2 cursor-pointer default-interactible-bg-color default-button-hovered-color rounded-lg transition shadow-md flex items-center;
+    @apply px-5 py-2 cursor-pointer default-interactible-bg-color default-button-hovered-color transition duration-250 shadow-md flex items-center;
 }

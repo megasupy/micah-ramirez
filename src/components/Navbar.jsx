@@ -2,8 +2,6 @@ import React, {useRef} from "react";
 import {Link} from "react-router-dom";
 import "../index.css"; // For repeated styles like header-text
 
-
-
 export default function Navbar({scrollFunction} ) {
 
   return (
@@ -11,6 +9,9 @@ export default function Navbar({scrollFunction} ) {
       <div className="top-nav-text-container">
         <button onClick={() => scrollFunction("Home")}>
           <span className="top-nav-text">Home</span>
+        </button>
+        <button onClick={() => scrollFunction("Education")}>
+          <span className="top-nav-text">Education</span>
         </button>
         <button onClick={() => scrollFunction("Projects")}>
           <span className="top-nav-text">Projects</span>
