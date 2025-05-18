@@ -5,7 +5,7 @@ import { faPhp } from "@fortawesome/free-brands-svg-icons";
 //import HCaptcha from "@hcaptcha/react-hcaptcha"; // Still figuring out how to impliment this, for now it will have to be insecure.
 //const CAPTCHA_SITE_KEY = "ce74ee62-81aa-406c-ad22-e1144fc8853a";
 const MY_EMAIL = "mi770395@ucf.edu";
-const API_URL = "https://localhost:7289/api/message";
+const API_URL = "https://csapi.micahramirez.tech/api/message";
 
 export default function Contact() {
   //const [captchaToken, setCaptchaToken] = useState(null);
@@ -138,7 +138,6 @@ export default function Contact() {
 
       const newFetchText = (
         <div>
-          hi guys
           {text.map((line) =>
             <p className="break-words break-all">
               {line.email} {line.name} {line.text}
@@ -220,7 +219,7 @@ export default function Contact() {
           )}
           
         </div>
-        {fetchText}
+        {/*fetchText*/}
       </div>
     </>
   );
