@@ -1,10 +1,11 @@
-import React, {useRef, useState} from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../index.css";
-import supabase from "../scripts/supabase.js";
+import { faPhp } from "@fortawesome/free-brands-svg-icons";
 
 //import HCaptcha from "@hcaptcha/react-hcaptcha"; // Still figuring out how to impliment this, for now it will have to be insecure.
 //const CAPTCHA_SITE_KEY = "ce74ee62-81aa-406c-ad22-e1144fc8853a";
 const MY_EMAIL = "mi770395@ucf.edu";
+const API_URL = "https://csapi.micahramirez.tech/api/message";
 
 export default function Contact() {
   //const [captchaToken, setCaptchaToken] = useState(null);
@@ -14,14 +15,15 @@ export default function Contact() {
   const [userName, setUserName] = useState("");
   const [userMessage, setUserMessage] = useState("");
   const [honeypot, setHoneypot] = useState("");
+  const [fetchText, setFetchText] = useState(<p />);
 
   function ClipboardClickable({
-                                copyCheckValue,
-                                timeDuration = 1500,
-                                title = "Copy to clipboard",
-                                copyText = "Copied!",
-                                className,
-                              }) {
+    copyCheckValue,
+    timeDuration = 1500,
+    title = "Copy to clipboard",
+    copyText = "Copied!",
+    className,
+  }) {
     const [showCopyText, setShowCopyText] = useState(false);
     const timeoutRef = useRef(null);
     return (
@@ -71,7 +73,8 @@ export default function Contact() {
       //} else if (!captchaToken) {
       //error = "Error: Must complete Captcha!"
     } else if (honeypot !== "") {
-      error = "Error: You are likely a bot. Please reload the page, enter your information manually, or send me an email."
+      error =
+        "Error: You are likely a bot. Please reload the page, enter your information manually, or send me an email.";
     }
     if (error) {
       setMessageResult(error);
@@ -80,20 +83,31 @@ export default function Contact() {
       return;
     }
 
-    const {data, error: supaError} = await supabase
-      .from("messages_sent_to_me")
-      .insert([{message: userMessage, name: userName, email: userEmail}]);
-    if (supaError) {
+    const response = await fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        MessageText: userMessage,
+        Name: userName,
+        Email: userEmail,
+      }),
+    });
+    /*
+    .catch((err) => {
       setMessageResult(
         "Message could not be sent. Please try again or message me some other way."
       );
-      console.log(supaError);
+      console.log(err);
       setMessageResultIsError(true);
       alert(
         "Message could not be sent. Please try again or message me some other way."
       );
       return;
     }
+    )
+    */
     setMessageResult("Message Sent!");
     setMessageResultIsError(false);
     alert("Message Sent!");
@@ -102,14 +116,54 @@ export default function Contact() {
     setUserMessage("");
   }
 
+  useEffect(() => {
+    const func = async () => {
+      const response = await fetch(API_URL, {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+        },
+      });
+      const responseJson = await response.json();
+      console.log(responseJson);
+      const text = [];
+      for (let line of responseJson) {
+        text.push({
+          email: line.email,
+          name: line.name,
+          text: line.messageText,
+        });
+        console.log(text);
+      }
+
+      const newFetchText = (
+        <div>
+          {text.map((line) =>
+            <p className="break-words break-all">
+              {line.email} {line.name} {line.text}
+            </p>
+          )}
+        </div>
+      );
+      setFetchText(
+        newFetchText
+      );
+
+      console.log("responseText", responseJson);
+      console.log(response);
+      console.log(newFetchText);
+    };
+    func();
+  }, []);
+
   return (
     <>
       <div className="default-paragraph-div">
         <p className="section-header-text">Contact Me</p>
         <p className="default-text-normal">
           Please contact me directly at{" "}
-          <span className="default-text-emphasis">{MY_EMAIL}</span>, send me a message on LinkedIn, or send me
-          a message through this form.
+          <span className="default-text-emphasis">{MY_EMAIL}</span>, send me a
+          message on LinkedIn, or send me a message through this form.
         </p>
         <ClipboardClickable
           className="p-2"
@@ -163,7 +217,9 @@ export default function Contact() {
           ) : (
             <p className="text-green-700 pb-2">{messageResult}</p>
           )}
+          
         </div>
+        {/*fetchText*/}
       </div>
     </>
   );
