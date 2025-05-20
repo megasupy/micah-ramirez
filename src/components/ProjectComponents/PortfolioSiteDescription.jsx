@@ -25,7 +25,7 @@ export default function PortfolioSiteDescription(props) {
         View Github Repository (Portfolio)
       </a>
     </div>
-    <div className="mt-6 default-button self-center items-center">
+    <div className="mt-2 default-button self-center items-center">
       <FontAwesomeIcon icon={faGithub} className="default-icons-color mr-3"/>
       <a title="https://github.com/megasupy/micah-ramirez" href="https://github.com/megasupy/MessageAPI" target="_blank">
         View Github Repository (REST API)
