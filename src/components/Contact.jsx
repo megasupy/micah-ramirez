@@ -83,31 +83,29 @@ export default function Contact() {
       return;
     }
 
-    const response = await fetch(API_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        MessageText: userMessage,
-        Name: userName,
-        Email: userEmail,
-      }),
-    });
-    /*
-    .catch((err) => {
-      setMessageResult(
-        "Message could not be sent. Please try again or message me some other way."
-      );
-      console.log(err);
+    
+    let response;
+    try {
+      response = await fetch(API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          MessageText: userMessage,
+          Name: userName,
+          Email: userEmail,
+        }),
+      });
+    }
+    catch (e) {
+      console.log(e);
+      const error = "Message not sent, please retry or send me a message some other way."
+      setMessageResult(error);
       setMessageResultIsError(true);
-      alert(
-        "Message could not be sent. Please try again or message me some other way."
-      );
+      alert(error);
       return;
     }
-    )
-    */
     setMessageResult("Message Sent!");
     setMessageResultIsError(false);
     alert("Message Sent!");
