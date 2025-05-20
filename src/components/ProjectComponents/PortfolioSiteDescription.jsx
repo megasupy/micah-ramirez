@@ -11,18 +11,24 @@ export default function PortfolioSiteDescription(props) {
   >
     <div className="flex items-center mb-3">
       <FontAwesomeIcon icon={faGlobe} className="default-icons-color section-header-text-small mr-3"/>
-      <p className="section-header-text-small m-0">Portfolio Website</p>
+      <p className="section-header-text-small m-0">Portfolio Website & REST API</p>
     </div>
     <ul className="text-left space-y-2 list-disc pl-4">
-      <li>Designed and developed this personal portfolio website using React.js and Tailwind CSS.</li>
-      <li>Implemented smooth scrolling navigation and interactive UI components for improved user experience.</li>
-      <li>Integrated with Supabase backend for contact form submissions.</li>
-      <li>Deployed to a custom domain using Github Pages</li>
+      <li>Developed single-page frontend using React.js and Tailwind, then deployed it to a custom .tech domain via Github Pages</li>
+      <li>Implemented smooth scrolling navigation and interactive UI components for seamless user experience.</li>
+      <li>Developed a custom REST API using ASP.NET core and Azure PostgreSQL Flexible Server to handle contact form submissions.</li>
+      <li>Hosted the REST API on an Nginx server running on an Azure virtual machine.</li>
     </ul>
     <div className="mt-6 default-button self-center items-center">
       <FontAwesomeIcon icon={faGithub} className="default-icons-color mr-3"/>
       <a title="https://github.com/megasupy/micah-ramirez" href="https://github.com/megasupy/micah-ramirez" target="_blank">
-        View Github Repository
+        View Github Repository (Portfolio)
+      </a>
+    </div>
+    <div className="mt-6 default-button self-center items-center">
+      <FontAwesomeIcon icon={faGithub} className="default-icons-color mr-3"/>
+      <a title="https://github.com/megasupy/micah-ramirez" href="https://github.com/megasupy/MessageAPI" target="_blank">
+        View Github Repository (REST API)
       </a>
     </div>
     <div className="mt-2 default-button self-center items-center">
