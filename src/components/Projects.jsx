@@ -33,7 +33,9 @@ export default function Projects() {
                  onClick2={() => scrollToSection(bashCloneRef)} onClick3={() => scrollToSection(gameJamRef)}/>
         <p className="pt-2"></p>
         <PortfolioSiteDescription ref={portfolioRef}/>
-        <PantryAppDescription ref={pantryAppRef}/>
+        {
+          //<PantryAppDescription ref={pantryAppRef}/>
+        }
         <BashCloneDescription ref={bashCloneRef}/>
         <ScaleBotDescription ref={gameJamRef}/>
       </ul>
