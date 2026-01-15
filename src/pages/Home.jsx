@@ -74,7 +74,9 @@ export default function Home() {
             <hr className="default-line-break"/>
             <Projects/>
             <hr className="default-line-break" ref={contactRef}/>
+            {
             <Contact/>
+            }
           </IndentContainer>
           <Copyright/>
         </div>

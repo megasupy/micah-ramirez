@@ -160,8 +160,8 @@ export default function Contact() {
         <p className="section-header-text">Contact Me</p>
         <p className="default-text-normal">
           Please contact me directly at{" "}
-          <span className="default-text-emphasis">{MY_EMAIL}</span>, send me a
-          message on LinkedIn, or send me a message through this form.
+          <span className="default-text-emphasis">{MY_EMAIL}</span>, or send me a
+          message on LinkedIn.
         </p>
         <ClipboardClickable
           className="p-2"
@@ -170,7 +170,8 @@ export default function Contact() {
           timeDuration={3000}
           copyText="Email copied!"
         />
-        {/**This is the form. */}
+        {/**This is the form. 
+
         <div className="py-4">
           <div className="default-paragraph-div items-center flex-col">
             <input
@@ -206,7 +207,10 @@ export default function Contact() {
               }}
             />
           </div>
-          {/*<HCaptcha sitekey={CAPTCHA_SITE_KEY} onVerify={(token) => setCaptchaToken(token)*/}
+          }
+          {//
+            <HCaptcha sitekey={CAPTCHA_SITE_KEY} onVerify={(token) => setCaptchaToken(token)
+          }
           <button className="default-button px-4" onClick={handleSubmit}>
             Send Form
           </button>
@@ -217,6 +221,8 @@ export default function Contact() {
           )}
           
         </div>
+        */
+        }
         {/*fetchText*/}
       </div>
     </>
