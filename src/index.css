@@ -51,6 +51,35 @@
 @utility top-nav-text-container {
     @apply flex flex-row justify-between px-8;
 }
+@utility mobile-menu-button {
+    @apply fixed top-4 right-4 z-[101] sm:hidden
+    w-12 h-12 flex items-center justify-center
+    top-nav-bg-color shadow-lg rounded-full
+    cursor-pointer transition-all duration-250;
+}
+@utility mobile-sidebar-backdrop {
+    @apply fixed inset-0 z-[102] sm:hidden
+    bg-black/50 backdrop-blur-sm;
+}
+@utility mobile-sidebar {
+    @apply fixed top-0 right-0 z-[103] sm:hidden
+    h-full w-64 max-w-[80vw]
+    top-nav-bg-color shadow-2xl
+    transform translate-x-full
+    transition-transform duration-300 ease-in-out;
+}
+@utility mobile-sidebar-open {
+    @apply translate-x-0;
+}
+@utility mobile-sidebar-content {
+    @apply flex flex-col pt-20 px-6 gap-2 overflow-y-auto;
+    max-height: 100vh;
+}
+@utility mobile-sidebar-item {
+    @apply w-full text-left py-2 px-4 rounded-lg
+    hover:bg-neutral-200/50 transition duration-200;
+    flex-shrink: 0;
+}
 @utility top-nav-text {
     @apply text-sm sm:text-base md:text-xl lg:text-2xl drop-shadow-md px-2 md:px-4 lg:px-8 top-nav-text-color cursor-pointer
     hover:drop-shadow-lg transition-all duration-250;
