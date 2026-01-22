@@ -16,6 +16,9 @@ export default function Navbar({scrollFunction} ) {
         <button onClick={() => scrollFunction("Projects")}>
           <span className="top-nav-text">Projects</span>
         </button>
+        <button onClick={() => scrollFunction("Experience")}>
+          <span className="top-nav-text">Experience</span>
+        </button>
         <button onClick={() => scrollFunction("Contact")}>
           <span className="top-nav-text">Contact</span>
         </button>

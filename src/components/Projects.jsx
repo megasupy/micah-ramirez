@@ -1,17 +1,16 @@
 import React, {Profiler, useRef} from "react";
 import "../index.css";
-import PortfolioSiteDescription from "./ProjectComponents/PortfolioSiteDescription.jsx";
-import PantryAppDescription from "./ProjectComponents/PantryAppDescription.jsx";
-import ProjectButtons from "./ProjectComponents/ProjectButtons.jsx";
-import BashCloneDescription from "./ProjectComponents/BashCloneDescription.jsx";
-import ScaleBotDescription from "./ProjectComponents/ScaleBotDescription.jsx";
+import ShaderSandboxDescription from "./ProjectComponents/ShaderSandboxDescription.jsx";
+import CoreMarketDescription from "./ProjectComponents/CoreMarketDescription.jsx";
+import StarSurvivorsDescription from "./ProjectComponents/StarSurvivorsDescription.jsx";
+import SmallProjectsDescription from "./ProjectComponents/SmallProjectsDescription.jsx";
 
 export default function Projects() {
   // Create refs for each section you want to scroll to
-  const portfolioRef = useRef(null);
-  const pantryAppRef = useRef(null);
-  const bashCloneRef = useRef(null);
-  const gameJamRef = useRef(null);
+  const shaderSandboxRef = useRef(null);
+  const coreMarketRef = useRef(null);
+  const starSurvivorsRef = useRef(null);
+  const smallProjectsRef = useRef(null);
 
   function scrollToSection(ref) {
     const refY = ref.current.getBoundingClientRect().top + window.scrollY;
@@ -29,15 +28,11 @@ export default function Projects() {
     <Profiler id={"Projects"} onRender={onRender}>
       <ul className="default-paragraph-div">
         <p className="section-header-text pb-8">Projects</p>
-        <ProjectButtons onClick={() => scrollToSection(portfolioRef)} onClick1={() => scrollToSection(pantryAppRef)}
-                 onClick2={() => scrollToSection(bashCloneRef)} onClick3={() => scrollToSection(gameJamRef)}/>
         <p className="pt-2"></p>
-        <PortfolioSiteDescription ref={portfolioRef}/>
-        {
-          //<PantryAppDescription ref={pantryAppRef}/>
-        }
-        <BashCloneDescription ref={bashCloneRef}/>
-        <ScaleBotDescription ref={gameJamRef}/>
+        <ShaderSandboxDescription ref={shaderSandboxRef}/>
+        <CoreMarketDescription ref={coreMarketRef}/>
+        <StarSurvivorsDescription ref={starSurvivorsRef}/>
+        <SmallProjectsDescription ref={smallProjectsRef}/>
       </ul>
     </Profiler>
   );

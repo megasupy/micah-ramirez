@@ -6,6 +6,7 @@ import AboutMe from "../components/AboutMe.jsx";
 import Contact from "../components/Contact.jsx";
 import Projects from "../components/Projects.jsx";
 import Education from "../components/Education.jsx";
+import Experience from "../components/Experience.jsx";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
   const eduRef = useRef(null);
+  const experienceRef = useRef(null);
 
   useEffect(() => {
     document.querySelector("#themeColor").setAttribute("content", "#E5E7EB");
@@ -32,6 +34,9 @@ export default function Home() {
         break;
       case "Education":
         ref = eduRef;
+        break;
+      case "Experience":
+        ref = experienceRef;
         break;
       default: return;
     }
@@ -73,6 +78,9 @@ export default function Home() {
             <div ref={projectsRef}/>
             <hr className="default-line-break"/>
             <Projects/>
+            <div ref={experienceRef}/>
+            <hr className="default-line-break"/>
+            <Experience/>
             <hr className="default-line-break" ref={contactRef}/>
             {
             <Contact/>
