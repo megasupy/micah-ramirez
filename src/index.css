@@ -101,11 +101,23 @@
 }
 @utility indent-paragraph-container {
     @apply indent-paragraph-color rounded-2xl
-    drop-shadow-md place-items-center p-8 mb-12 max-w-11/12;
+    drop-shadow-md place-items-center mb-12 max-w-11/12;
+    padding: 0.5rem;
+}
+@media (min-width: 640px) {
+    .indent-paragraph-container {
+        padding: 2rem;
+    }
 }
 @utility indent-paragraph-container-2 {
     @apply indent-paragraph-color-2 self-center
-    drop-shadow-md place-items-center p-8 mb-12 w-12/12;
+    drop-shadow-md place-items-center mb-12 w-12/12;
+    padding: 1.25rem 1rem;
+}
+@media (min-width: 640px) {
+    .indent-paragraph-container-2 {
+        padding: 2rem;
+    }
 }
 @utility section-header-text {
     @apply default-icons-color text-2xl font-bold pb-6;
@@ -149,4 +161,11 @@
 }
 @utility projects-buttons {
     @apply px-5 py-2 cursor-pointer default-interactible-bg-color default-button-hovered-color transition duration-250 shadow-md flex items-center;
+}
+
+/* Reduce bullet list padding on small screens */
+@media (max-width: 639px) {
+    ul.list-disc.pl-4 {
+        padding-left: 0.5rem !important;
+    }
 }

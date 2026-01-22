@@ -52,10 +52,12 @@ export default function Experience() {
         
         {/* DataAnnotation.tech */}
         <div ref={dataAnnotationRef} className="indent-paragraph-container-2">
-          <div className="flex items-center mb-3">
-            <FontAwesomeIcon icon={faBriefcase} className="default-icons-color section-header-text-small mr-3"/>
-            <p className="section-header-text-small m-0">DataAnnotation.tech: Programming Task Contributor</p>
-            <p className="section-header-subtext-small m-0 ml-auto">March 2025 - Present</p>
+          <div className="mb-3">
+            <div className="flex items-center">
+              <FontAwesomeIcon icon={faBriefcase} className="default-icons-color section-header-text-small mr-3"/>
+              <p className="section-header-text-small m-0">DataAnnotation.tech: Programming Task Contributor</p>
+            </div>
+            <p className="section-header-subtext-small m-0 ml-11">March 2025 - Present</p>
           </div>
           <ul className="text-left space-y-2 list-disc pl-4">
             <li>Reviewed AI generated code across languages like Javascript and Python for correctness, readability, and instruction following.</li>
@@ -65,10 +67,12 @@ export default function Experience() {
 
         {/* HealthStream */}
         <div ref={healthStreamRef} className="indent-paragraph-container-2">
-          <div className="flex items-center mb-3">
-            <FontAwesomeIcon icon={faBriefcase} className="default-icons-color section-header-text-small mr-3"/>
-            <p className="section-header-text-small m-0">HealthStream: Software Developer Intern</p>
-            <p className="section-header-subtext-small m-0 ml-auto">June 2025 – December 2025</p>
+          <div className="mb-3">
+            <div className="flex items-center">
+              <FontAwesomeIcon icon={faBriefcase} className="default-icons-color section-header-text-small mr-3"/>
+              <p className="section-header-text-small m-0">HealthStream: Software Developer Intern</p>
+            </div>
+            <p className="section-header-subtext-small m-0 ml-11">June 2025 – December 2025</p>
           </div>
           <ul className="text-left space-y-2 list-disc pl-4">
             <li>Resolved front-end and back-end production issues using Angular and ASP.NET, improving application reliability.</li>
@@ -80,10 +84,12 @@ export default function Experience() {
 
         {/* Calvary Chapel Orlando */}
         <div ref={calvaryChapelRef} className="indent-paragraph-container-2">
-          <div className="flex items-center mb-3">
-            <FontAwesomeIcon icon={faBriefcase} className="default-icons-color section-header-text-small mr-3"/>
-            <p className="section-header-text-small m-0">Calvary Chapel Orlando: Custodian, Volunteer Coordinator</p>
-            <p className="section-header-subtext-small m-0 ml-auto">August 2022 – June 2025</p>
+          <div className="mb-3">
+            <div className="flex items-center">
+              <FontAwesomeIcon icon={faBriefcase} className="default-icons-color section-header-text-small mr-3"/>
+              <p className="section-header-text-small m-0">Calvary Chapel Orlando: Custodian, Volunteer Coordinator</p>
+            </div>
+            <p className="section-header-subtext-small m-0 ml-11">August 2022 – June 2025</p>
           </div>
           <ul className="text-left space-y-2 list-disc pl-4">
             <li>Maintained standards of cleanliness for 400+ attendees through regular inspections to identify and address maintenance issues.</li>

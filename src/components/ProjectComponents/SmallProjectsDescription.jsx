@@ -11,10 +11,12 @@ export default function SmallProjectsDescription(props) {
     ref={props.ref}
     className="indent-paragraph-container-2"
   >
-    <div className="flex items-center mb-3">
-      <FontAwesomeIcon icon={faLaptopCode} className="default-icons-color section-header-text-small mr-3"/>
-      <p className="section-header-text-small m-0">Small Projects & Hackathons: Various Roles</p>
-      <p className="section-header-subtext-small m-0 ml-auto">August 2021 – Present</p>
+    <div className="mb-3">
+      <div className="flex items-center">
+        <FontAwesomeIcon icon={faLaptopCode} className="default-icons-color section-header-text-small mr-3"/>
+        <p className="section-header-text-small m-0">Small Projects & Hackathons: Various Roles</p>
+      </div>
+      <p className="section-header-subtext-small m-0 ml-11">August 2021 – Present</p>
     </div>
     <ul className="text-left space-y-2 list-disc pl-4">
       <li>Built a Raspberry PI Pico W web server that lets users control a lightbulb remotely from the browser.</li>
