@@ -19,6 +19,11 @@ export default function StarSurvivorsDescription(props) {
       <li>Implemented sound mixing, music, sound effects, some VFX, and some shaders.</li>
       <li>Contributed to all aspects of the project, including initial project architecture, balancing, and bug fixes.</li>
     </ul>
-    {/* Add links here when provided */}
+    <div className="mt-6 default-button self-center items-center">
+      <FontAwesomeIcon icon={faGamepad} className="default-icons-color mr-3"/>
+      <a title="Play Star Survivors" href="https://megasupy.itch.io/star-survivors" target="_blank">
+        Play Star Survivors
+      </a>
+    </div>
   </div>;
 }

@@ -25,6 +25,11 @@ export default function CoreMarketDescription(props) {
         View Site
       </a>
     </div>
-    {/* Add GitHub link here when provided */}
+    <div className="mt-2 default-button self-center items-center">
+      <FontAwesomeIcon icon={faGithub} className="default-icons-color mr-3"/>
+      <a title="CoreMarket GitHub" href="https://github.com/cachille061/large-project" target="_blank">
+        View Github Repository
+      </a>
+    </div>
   </div>;
 }
