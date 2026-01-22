@@ -24,9 +24,9 @@ export default function Education() {
   return (
     <Profiler id={"Education"} onRender={onRender}>
       <ul className="default-paragraph-div">
-        <p className="section-header-text pb-8">Education</p>
+        <p className="section-header-text pb-6 sm:pb-8">Education</p>
         {/*<EducationButtons onClick={() => scrollToSection(ucfRef)} onClick1={() => scrollToSection(sscRef)}>*/}
-        <p className="pt-2"></p>
+        <p className="pt-1 sm:pt-2"></p>
         <UCF ref={ucfRef}/>
         <SSC ref={sscRef}/>
 

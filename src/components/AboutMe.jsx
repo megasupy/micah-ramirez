@@ -6,7 +6,7 @@ import Icons from "./Icons.jsx";
 export default function AboutMe() {
   return (
     <>
-      <div className="default-paragraph-div py-10">
+      <div className="default-paragraph-div py-6 sm:py-10">
         <p className="default-text-color default-text-big font-bold">
           Hello! My name is
           <br />
@@ -19,6 +19,11 @@ export default function AboutMe() {
       <div className="default-paragraph-div">
         <p className="section-header-text">About Me</p>
         <p className="default-text-color">
+        Senior Computer Science student with 3.9 GPA and internship experience in an 
+        AGILE production environment. Experienced in full-stack development, 
+        game development, and graphics programming. 
+        Seeking to master new technologies while also solving real problems.
+        {/**
           I am a junior computer science student at University of Central
           Florida with a 3.9 GPA and a passion for developing efficient
           software. My coursework at UCF has given me a strong understanding of
@@ -27,6 +32,7 @@ export default function AboutMe() {
           React Native, Node.js, PostgreSQL, and C#. My ultimate goal is to
           improve lives with software, so I am eager to apply my skills to make
           a real impact.
+        */}
         </p>
       </div>
       <Icons />

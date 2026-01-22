@@ -4,7 +4,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 export default function Icons() {
-  return (<div className="flex flex-row justify-center gap-16 pt-10 pb-8">
+  return (<div className="flex flex-row justify-center gap-8 sm:gap-16 pt-6 sm:pt-10 pb-6 sm:pb-8">
     <a
       title="My Linkedin"
       href="https://www.linkedin.com/in/micah-ramirez-588174310/"

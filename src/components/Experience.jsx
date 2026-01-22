@@ -24,8 +24,8 @@ export default function Experience() {
   return (
     <Profiler id={"Experience"} onRender={onRender}>
       <ul className="default-paragraph-div">
-        <p className="section-header-text pb-8">Experience</p>
-        <div className="flex flex-wrap justify-center gap-4 mb-6">
+        <p className="section-header-text pb-6 sm:pb-8">Experience</p>
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-4 sm:mb-6">
           <button
             onClick={() => scrollToSection(dataAnnotationRef)}
             className="projects-buttons"
@@ -48,16 +48,16 @@ export default function Experience() {
             Calvary Chapel Orlando
           </button>
         </div>
-        <p className="pt-2"></p>
+        <p className="pt-1 sm:pt-2"></p>
         
         {/* DataAnnotation.tech */}
         <div ref={dataAnnotationRef} className="indent-paragraph-container-2">
           <div className="mb-3">
             <div className="flex items-center">
-              <FontAwesomeIcon icon={faBriefcase} className="default-icons-color section-header-text-small mr-3"/>
+              <FontAwesomeIcon icon={faBriefcase} className="default-icons-color section-header-text-small w-0 h-0 lg:w-auto lg:h-auto lg:mr-3"/>
               <p className="section-header-text-small m-0">DataAnnotation.tech: Programming Task Contributor</p>
             </div>
-            <p className="section-header-subtext-small m-0 ml-11">March 2025 - Present</p>
+            <p className="section-header-subtext-small m-0 text-center">March 2025 - Present</p>
           </div>
           <ul className="text-left space-y-2 list-disc pl-4">
             <li>Reviewed AI generated code across languages like Javascript and Python for correctness, readability, and instruction following.</li>
@@ -69,10 +69,10 @@ export default function Experience() {
         <div ref={healthStreamRef} className="indent-paragraph-container-2">
           <div className="mb-3">
             <div className="flex items-center">
-              <FontAwesomeIcon icon={faBriefcase} className="default-icons-color section-header-text-small mr-3"/>
+              <FontAwesomeIcon icon={faBriefcase} className="default-icons-color section-header-text-small w-0 h-0 lg:w-auto lg:h-auto lg:mr-3"/>
               <p className="section-header-text-small m-0">HealthStream: Software Developer Intern</p>
             </div>
-            <p className="section-header-subtext-small m-0 ml-11">June 2025 – December 2025</p>
+            <p className="section-header-subtext-small m-0 text-center">June 2025 – December 2025</p>
           </div>
           <ul className="text-left space-y-2 list-disc pl-4">
             <li>Resolved front-end and back-end production issues using Angular and ASP.NET, improving application reliability.</li>
@@ -86,10 +86,10 @@ export default function Experience() {
         <div ref={calvaryChapelRef} className="indent-paragraph-container-2">
           <div className="mb-3">
             <div className="flex items-center">
-              <FontAwesomeIcon icon={faBriefcase} className="default-icons-color section-header-text-small mr-3"/>
+              <FontAwesomeIcon icon={faBriefcase} className="default-icons-color section-header-text-small w-0 h-0 lg:w-auto lg:h-auto lg:mr-3"/>
               <p className="section-header-text-small m-0">Calvary Chapel Orlando: Custodian, Volunteer Coordinator</p>
             </div>
-            <p className="section-header-subtext-small m-0 ml-11">August 2022 – June 2025</p>
+            <p className="section-header-subtext-small m-0 text-center">August 2022 – June 2025</p>
           </div>
           <ul className="text-left space-y-2 list-disc pl-4">
             <li>Maintained standards of cleanliness for 400+ attendees through regular inspections to identify and address maintenance issues.</li>

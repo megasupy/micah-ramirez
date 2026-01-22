@@ -12,10 +12,10 @@ export default function CoreMarketDescription(props) {
   >
     <div className="mb-3">
       <div className="flex items-center">
-        <FontAwesomeIcon icon={faMobileAlt} className="default-icons-color section-header-text-small mr-3"/>
+        <FontAwesomeIcon icon={faMobileAlt} className="default-icons-color section-header-text-small w-0 h-0 lg:w-auto lg:h-auto lg:mr-3"/>
         <p className="section-header-text-small m-0">CoreMarket: Project Manager, App Developer</p>
       </div>
-      <p className="section-header-subtext-small m-0 ml-11">August 2025 – December 2025</p>
+      <p className="section-header-subtext-small m-0 text-center">August 2025 – December 2025</p>
     </div>
     <ul className="text-left space-y-2 list-disc pl-4">
       <li>Led as part of a team of 4, planning tasks and deadlines to ensure completion of our mock product marketplace.</li>

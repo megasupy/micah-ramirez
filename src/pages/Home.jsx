@@ -56,7 +56,7 @@ export default function Home() {
 
   const Copyright = () => (
     <p className="default-text-small text-center pb-4">
-      <br/>© 2025 Micah Ramirez. All rights reserved.
+      <br/>© 2026 Micah Ramirez. All rights reserved.
     </p>
   );
 

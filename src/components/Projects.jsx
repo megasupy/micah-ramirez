@@ -29,38 +29,38 @@ export default function Projects() {
   return (
     <Profiler id={"Projects"} onRender={onRender}>
       <ul className="default-paragraph-div">
-        <p className="section-header-text pb-8">Projects</p>
-        <div className="flex flex-wrap justify-center gap-4 mb-6">
+        <p className="section-header-text pb-6 sm:pb-8">Projects</p>
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-4 mb-4 sm:mb-6">
           <button
             onClick={() => scrollToSection(shaderSandboxRef)}
             className="projects-buttons"
           >
-            <FontAwesomeIcon icon={faCode} className="mr-2"/>
+            <FontAwesomeIcon icon={faCode} className="mr-2 w-auto h-auto"/>
             Shader Sandbox
           </button>
           <button
             onClick={() => scrollToSection(coreMarketRef)}
             className="projects-buttons"
           >
-            <FontAwesomeIcon icon={faMobileAlt} className="mr-2"/>
+            <FontAwesomeIcon icon={faMobileAlt} className="mr-2 w-auto h-auto"/>
             CoreMarket
           </button>
           <button
             onClick={() => scrollToSection(starSurvivorsRef)}
             className="projects-buttons"
           >
-            <FontAwesomeIcon icon={faGamepad} className="mr-2"/>
+            <FontAwesomeIcon icon={faGamepad} className="mr-2 w-auto h-auto"/>
             Star Survivors
           </button>
           <button
             onClick={() => scrollToSection(smallProjectsRef)}
             className="projects-buttons"
           >
-            <FontAwesomeIcon icon={faLaptopCode} className="mr-2"/>
+            <FontAwesomeIcon icon={faLaptopCode} className="mr-2 w-auto h-auto"/>
             Small Projects
           </button>
         </div>
-        <p className="pt-2"></p>
+        <p className="pt-1 sm:pt-2"></p>
         <ShaderSandboxDescription ref={shaderSandboxRef}/>
         <CoreMarketDescription ref={coreMarketRef}/>
         <StarSurvivorsDescription ref={starSurvivorsRef}/>

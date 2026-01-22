@@ -13,10 +13,10 @@ export default function SmallProjectsDescription(props) {
   >
     <div className="mb-3">
       <div className="flex items-center">
-        <FontAwesomeIcon icon={faLaptopCode} className="default-icons-color section-header-text-small mr-3"/>
+        <FontAwesomeIcon icon={faLaptopCode} className="default-icons-color section-header-text-small w-0 h-0 lg:w-auto lg:h-auto lg:mr-3"/>
         <p className="section-header-text-small m-0">Small Projects & Hackathons: Various Roles</p>
       </div>
-      <p className="section-header-subtext-small m-0 ml-11">August 2021 – Present</p>
+      <p className="section-header-subtext-small m-0 text-center">August 2021 – Present</p>
     </div>
     <ul className="text-left space-y-2 list-disc pl-4">
       <li>Built a Raspberry PI Pico W web server that lets users control a lightbulb remotely from the browser.</li>

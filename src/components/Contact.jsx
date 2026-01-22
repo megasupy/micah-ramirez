@@ -164,7 +164,7 @@ export default function Contact() {
           message on LinkedIn.
         </p>
         <ClipboardClickable
-          className="p-2"
+          className="p-2 flex justify-center"
           copyCheckValue={MY_EMAIL}
           title="Copy email to clipboard"
           timeDuration={3000}

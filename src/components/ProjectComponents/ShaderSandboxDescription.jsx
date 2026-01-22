@@ -11,10 +11,10 @@ export default function ShaderSandboxDescription(props) {
   >
     <div className="mb-3">
       <div className="flex items-center">
-        <FontAwesomeIcon icon={faCode} className="default-icons-color section-header-text-small mr-3"/>
+        <FontAwesomeIcon icon={faCode} className="default-icons-color section-header-text-small w-0 h-0 lg:w-auto lg:h-auto lg:mr-3"/>
         <p className="section-header-text-small m-0">Shader Sandbox: C++ Developer</p>
       </div>
-      <p className="section-header-subtext-small m-0 ml-11">August 2025 - Present</p>
+      <p className="section-header-subtext-small m-0 text-center">August 2025 - Present</p>
     </div>
     <ul className="text-left space-y-2 list-disc pl-4">
       <li>Contributed to an AGILE team of 6, attending standups and collaborating to integrate features across the OpenGL rendering engine.</li>
